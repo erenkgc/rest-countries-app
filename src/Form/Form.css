@@ -1,0 +1,35 @@
+.form-container {
+  padding: 4rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+input {
+  padding: 0.5rem 1rem;
+  font-size: large;
+  border: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.form input:focus {
+  outline: none;
+}
+.form select {
+  padding: 0.8rem 1rem;
+  border: none;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  transition: 0.3 ease;
+}
+
+.form select:focus {
+  outline: none;
+}
+.form button {
+  margin-left: 1rem;
+}

@@ -1,0 +1,20 @@
+.country {
+  /* background-color: red; */
+  max-width: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.country .name {
+  font-size: large;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.country .flag {
+  width: 10rem;
+}

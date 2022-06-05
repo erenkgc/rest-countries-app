@@ -1,0 +1,9 @@
+.countries-container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  justify-content: center;
+  /* align-content: center; */
+  gap: 5rem;
+  padding: 1rem 10rem;
+}
