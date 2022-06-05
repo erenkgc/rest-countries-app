@@ -7,13 +7,15 @@ function App() {
   const [country, setCountry] = useState([]);
   const [search, setSearch] = useState("");
   const [region, setRegion] = useState("europe");
-  const selectValue = { value: "Bölge Seçiniz" };
+
   useEffect(() => {
     fetchDataHandler();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     fetchRegionDataHandler();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [region]);
   const fetchRegionDataHandler = async () => {
     try {
@@ -56,18 +58,14 @@ function App() {
 
       <div className="countries-container">
         {country
-          ?.filter((item) => {
-            if (search === "") {
-              return item;
-            } else if (
-              item.name.common
-                .trim()
-                .toLowerCase()
-                .includes(search.trim().toLowerCase())
-            ) {
-              return item;
-            }
-          })
+          ?.filter((item) =>
+            search === ""
+              ? item
+              : item.name.common
+                  .trim()
+                  .toLowerCase()
+                  .includes(search.trim().toLowerCase())
+          )
           .map((item) => (
             <CountriesContainer
               key={Math.random()}
