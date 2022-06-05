@@ -5,7 +5,7 @@ const CountriesContainer = (props) => {
   return (
     <React.Fragment>
       <div className="country">
-        <img src={props.flags} className="flag" />
+        <img src={props.flags} alt="Flag" className="flag" />
         <div>
           <p className="name">{props.name}</p>
           <p className="population">
